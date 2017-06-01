@@ -8,4 +8,6 @@ WORKDIR /home/nodejs/app
 COPY . /home/nodejs/app
 RUN npm install --production
 
+EXPOSE 8080
+
 CMD ["node", "app.js"]
